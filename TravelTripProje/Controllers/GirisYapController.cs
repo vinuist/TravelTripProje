@@ -19,6 +19,7 @@ namespace TravelTripProje.Controllers
         [HttpPost]
         public ActionResult Login(Admin ad)
         {
+        // Hellö Ceyda
             var bilgiler = c.Admins.FirstOrDefault(x => x.KullaniciAdi == ad.KullaniciAdi && x.Sifre == ad.Sifre);
             if (bilgiler!=null)
             {
